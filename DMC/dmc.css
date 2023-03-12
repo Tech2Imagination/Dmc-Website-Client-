@@ -1,0 +1,516 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-theme-color: #2a77cf;
+    --secondary-theme-color: #ddda23;
+    --text-color: #2a3032; 
+    --padding: 20px;
+    --color:  rgb(48, 194, 204);
+    --second-color: rgb(211, 102, 12);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1rem;
+}
+
+
+/* navbar start */
+.container{
+    margin-inline: auto;
+    max-width: 3540px;
+    margin-bottom: 85px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background: url(./img/header-5.png);
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ ::-webkit-scrollbar{
+         width: 5px;
+     }
+     ::-webkit-scrollbar-thumb{
+         border-radius: 10px;
+         background-color: rgb(255, 169, 10);
+     }
+     ::-webkit-scrollbar-track{
+         background-color: rgb(218, 218, 218);
+     }
+.nav-logo{
+    font-size: 1.5rem;
+    width: 200px;
+    padding: 8px;
+}
+.nav-logo > a > img{
+    width: 100px;
+}
+.main-nav{
+    justify-content: space-between;
+    position: relative;
+}
+.nav-ul{
+    display: flex;
+}
+
+.nav-ul > li{
+    list-style-type: none;
+    margin: 20px;
+    padding-right: var(--padding);
+}
+.nav-ul > li > a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-icons{
+    font-size: 1.8rem;
+    margin: 16px;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.nav-icons > a{
+    padding: var(--padding);
+}
+.nav-icon-one > i:hover{
+    color: rgb(37, 241, 19);
+}
+.nav-icon-two > i:hover{
+    color: rgb(238, 28, 28);
+}
+.nav-icon-three > i:hover{
+    color: rgb(46, 196, 216);
+}
+.nav-icon-three{
+    font-size: 1.6rem;
+}
+.nav-icon-four > i:hover{
+    color:rgb(0, 162, 255);
+}
+.nav-icon-yt > i:hover{
+    color: rgb(230, 16, 16);
+}
+
+.nav-ul > li > a:hover{
+   color: orange;
+   transition: .2s ease;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+    background-color: orange;
+}
+
+/* navbar finished */
+
+
+/* header-section start*/
+.header-section{
+    max-width: 1140px;
+    margin-inline: auto;
+    padding-inline: auto;
+    display: flex;
+}
+
+.header-img > img{
+    width: 550px;
+
+}
+.header-text{
+    margin-inline: auto;
+    padding-inline: auto;
+}
+.header-text-one{
+    margin-top: 100px;
+}
+.header-text-three{
+    margin-top: 55px;
+}
+.header-text-two{
+    margin-top: 25px;
+}
+.header-img-three{
+    margin-top: 55px;
+}
+    .header-text{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 55px 25px;
+    line-height: 30px;
+}
+.heading{
+    position: relative;
+    padding: 25px;
+    margin-inline: auto;
+    padding-inline: auto;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--second-color);
+
+}
+.heading > h1 {
+    font-size: 3.5rem;
+}
+
+.heading::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    height: 2px;
+    background-color: var(--second-color);
+    border-radius: 5px;
+    scale: 1;
+    transform-origin: left;
+    transition: scale 0.25s;
+}
+
+.heading:hover{
+   
+   color: rgb(231, 58, 28);
+   
+}
+/* header-section finished */
+
+/* card scroller start */
+
+.map{
+    margin-inline: auto;
+    padding-inline: auto;
+    max-width: 3540px;
+    margin-top: 100px;
+}
+.map > iframe{
+    width: 98%;
+}
+
+/* card scrooler finished */
+
+/* footer start */
+.footer-distributed{
+	background: rgb(0, 0, 0);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+        min-width: 340px;
+	}
+    .footer-left > span > img{
+        width: 55vw;;
+    }
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+        width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		
+	}
+
+}
+.logo{
+  height: 10vh;
+  width: 10vh;
+}
+
+/* footer finished */
+.parallax {
+  /* The image used */
+  background-image: url("./img/parallax.jpg");
+
+  /* Set a specific height */
+  height: 75vh;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 200px 0 50px 0;
+}
+
+/*  */
+.founder-container{
+    margin-inline: auto;
+    padding-inline: auto;
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+.founder-box{
+    margin: 25px;
+    height: 280px;
+    width: 300px;
+    margin: 25px;   
+}
+.f-box-one > img{
+    width: 100%;
+    height: 270px;
+}
+.f-box-two > img{
+    width: 100%;
+    height: 270px;
+}
+.f-box-three > img{
+    width: 100%;
+    height: 270px;
+}
+
+
+.founder-box > p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 25px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#fc5d02, #f10b0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.founder-box > a{
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 25px;
+    font-weight: bold;
+    color: #222;
+    padding-left: 82px;
+}
+.founder-box > a:hover{
+    cursor: pointer;
+}
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+.food-container{
+    margin-inline: auto;
+    padding-inline: auto;
+    max-width: 1140px;
+    display: flex;
+    border: 2px solid;
+    height: 500px;
+    border: none;
+}
+.food{
+    flex: 1;
+    overflow: hidden; 
+    transition: all .5s ease-in-out;   
+}
+.food > img{
+    object-fit: cover;
+    background-position: center;
+    background-clip: inherit;
+}
+.food:hover{
+    flex: 3;
+}
+.view{
+    color: #e41811;
+}

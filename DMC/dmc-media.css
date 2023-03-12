@@ -1,0 +1,121 @@
+/* navbar start */
+@media screen and (max-width:985px){
+  .hamburger{
+      display: block;
+      margin: 20px;
+      padding-right: var(--padding);
+  }
+  .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+  }
+ 
+  .nav-icons{
+      display: none;
+  }
+
+  .nav-ul{
+      position: fixed;
+      left: -100%;
+      top: 0px;
+      gap: 15px;
+      min-width: 340px;
+      padding-top: 155px;
+      height: 75vh;
+      flex-direction: column;
+      background-color: black;
+      width: 100%;
+      text-align: center;
+      transition: 0.5s ease-in-out;
+  }
+  .nav-item{
+      margin: 16px auto;
+  }
+  .nav-item >.nav-link{
+      color: #fff;
+  }
+  .nav-ul.active{
+      left: 0;
+      position: absolute; 
+      width: 100%;
+  }
+  .nav-icons{
+      display: none;
+  }
+}
+/* navbar finished */
+
+/* header section start  */
+@media  screen and (max-width:1140px){
+  .header-section{
+    display: block;
+    min-width: 340px;;
+  }
+  .header-section-two{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header-img > img{
+    min-width: 340px;;
+  }
+  .header-img{
+    display: flex;
+    justify-content: center;
+  }
+  .header-text-one{
+    margin-top: -50px;
+  }
+
+  .header-text{
+    min-width: 340px;;
+  }
+  /* .container{
+    min-width:  490px;
+  } */
+   .parallax{
+    min-width: 340px;;
+   }
+   nav{
+    min-width: 340px;;
+   }
+   .view{
+    min-width: 340px;;
+   }
+   .founder-container{
+    min-width: 340px;;
+   }
+
+   .food-container{
+    min-width: 340px;;
+   }
+   .food:hover{
+    flex: 5;
+}
+.founder-box{
+  min-width: 340px;
+  margin: 105px;
+}
+.map{
+  min-width: 340px;;
+}
+.footer-destributed{
+  min-width: 340px;
+
+}
+.heading{
+  min-width: 340px;;
+  text-align: center;
+}
+.heading > h1{
+  font-size: 2rem;
+}
+}
+
+/* header section finished */
+
+  /* card scroller start */
